@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Generator stopki</title>
+    <title>Generator podpisu</title>
 </head>
 <body>
 <div class="content">
@@ -41,9 +41,9 @@
                     <option value="online">Online</option>
                     <option value="fundacja">Fundacja UNUM</option>
                 </select>
-            </li>
+            </li><br><br>  
             <li class="button">
-                <input class="btn" type="button" value="Wygeneruj" onClick="writeValues(form)">
+                <input class="btn" id="generatebutton" type="button" value="WYGENERUJ" onClick="writeValues(form)">
               </li>
         </ul>
         <div id="copyarea">
@@ -55,9 +55,10 @@
         <span id="eco" style="font-size: 10px; color:#00a000"></span><br>
         </div>
     </form>
-    <button type="button" class="btn" onclick="CopyToClipboard(copyarea)" style="margin-left: calc(20vw - 50px)">Kopiuj podpis</button>
+    <button type="button" class="btn" id="copyButton" onclick="CopyToClipboard(copyarea)" style="margin-left: calc(20vw - 50px)">Kopiuj podpis</button>
     <br><br><br>
 </div>
 <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
+
